@@ -19,13 +19,13 @@ export class Snake {
 
     addKeyboardHandler() {
         document.addEventListener('keydown', (event) => {
-            if (event.key === 'ArrowLeft' && this.currentDirection !== 'right') {
+            if (event.key === 'ArrowLeft' || event.key === 'a' || event.key === 'ф' && this.currentDirection !== 'right') {
                 this.currentDirection = 'left';
-            } else if (event.key === 'ArrowRight' && this.currentDirection !== 'left') {
+            } else if (event.key === 'ArrowRight' || event.key === 'd' || event.key === 'в' && this.currentDirection !== 'left') {
                 this.currentDirection = 'right';
-            } else if (event.key === 'ArrowUp' && this.currentDirection !== 'down') {
+            } else if (event.key === 'ArrowUp' || event.key === 'w' || event.key === 'ц' && this.currentDirection !== 'down') {
                 this.currentDirection = 'up';
-            } else if (event.key === 'ArrowDown' && this.currentDirection !== 'up') {
+            } else if (event.key === 'ArrowDown' || event.key === 's' || event.key === 'ы' && this.currentDirection !== 'up') {
                 this.currentDirection = 'down';
             }
         });
