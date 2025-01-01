@@ -1,5 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 canvas {
     background: forestgreen;
+    border: 5px solid red;
+    box-sizing: border-box;
 }
 
 .info {
