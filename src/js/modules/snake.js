@@ -19,13 +19,13 @@ export class Snake {
 
     addKeyboardHandler() {
         document.addEventListener('keydown', (event) => {
-            if (event.key === 'ArrowLeft' || event.key === 'a' || event.key === 'ф' || event.key === 'A' || event.key === 'Ф' && this.currentDirection !== 'right') {
+            if ((event.key === 'ArrowLeft' || event.key === 'a' || event.key === 'ф' || event.key === 'A' || event.key === 'Ф') && this.currentDirection !== 'right') {
                 this.currentDirection = 'left';
-            } else if (event.key === 'ArrowRight' || event.key === 'd' || event.key === 'в' || event.key === 'D' || event.key === 'В' && this.currentDirection !== 'left') {
+            } else if ((event.key === 'ArrowRight' || event.key === 'd' || event.key === 'в' || event.key === 'D' || event.key === 'В') && this.currentDirection !== 'left') {
                 this.currentDirection = 'right';
-            } else if (event.key === 'ArrowUp' || event.key === 'w' || event.key === 'ц' || event.key === 'W' || event.key === 'Ц' && this.currentDirection !== 'down') {
+            } else if ((event.key === 'ArrowUp' || event.key === 'w' || event.key === 'ц' || event.key === 'W' || event.key === 'Ц') && this.currentDirection !== 'down') {
                 this.currentDirection = 'up';
-            } else if (event.key === 'ArrowDown' || event.key === 's' || event.key === 'ы' || event.key === 'S' || event.key === 'Ы' && this.currentDirection !== 'up') {
+            } else if ((event.key === 'ArrowDown' || event.key === 's' || event.key === 'ы' || event.key === 'S' || event.key === 'Ы') && this.currentDirection !== 'up') {
                 this.currentDirection = 'down';
             }
         });
